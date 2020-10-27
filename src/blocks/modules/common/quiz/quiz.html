@@ -1,0 +1,169 @@
+<form class="quiz" action="/" method="POST">
+  <div class="quiz__wrapper">
+    <div class="quiz__items">
+      <div class="quiz__item">
+        <p class="quiz__question">
+          Мне хотелось бы в своей профессиональной деятельности
+        </p>
+        <div class="form__radios quiz__radios">
+          <div class="form__radio">
+            <label class="form__radio-label">
+              <input
+                class="form__radio-input"
+                type="radio"
+                name="q_1"
+                value="a"
+                checked
+              />
+              общаться с самыми разными людьми;
+              <span class="form__radio-check"></span>
+            </label>
+          </div>
+          <div class="form__radio">
+            <label class="form__radio-label">
+              <input
+                class="form__radio-input"
+                type="radio"
+                name="q_1"
+                value="b"
+              />
+              снимать фильмы, писать книги, рисовать, выступать на сцене и т.д.
+              <span class="form__radio-check"></span>
+            </label>
+          </div>
+          <div class="form__radio">
+            <label class="form__radio-label">
+              <input
+                class="form__radio-input"
+                type="radio"
+                name="q_1"
+                value="с"
+              />
+              снимать фильмы, писать книги, рисовать, выступать на сцене и т.д.
+              <span class="form__radio-check"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="quiz__item">
+        <p class="quiz__question">
+          В книге или кинофильме меня больше всего привлекает
+        </p>
+        <div class="form__radios quiz__radios">
+          <div class="form__radio">
+            <label class="form__radio-label">
+              <input
+                class="form__radio-input"
+                type="radio"
+                name="q_2"
+                value="a"
+                checked
+              />
+              возможность следить за ходом мыслей автора;
+              <span class="form__radio-check"></span>
+            </label>
+          </div>
+          <div class="form__radio">
+            <label class="form__radio-label">
+              <input
+                class="form__radio-input"
+                type="radio"
+                name="q_2"
+                value="b"
+              />
+              художественная форма, мастерство писателя или режиссера;
+              <span class="form__radio-check"></span>
+            </label>
+          </div>
+          <div class="form__radio">
+            <label class="form__radio-label">
+              <input
+                class="form__radio-input"
+                type="radio"
+                name="q_2"
+                value="с"
+              />
+              сюжет, действия героев.
+              <span class="form__radio-check"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="quiz__item">
+        <p class="quiz__question">
+          Меня больше обрадует Нобелевская премия
+        </p>
+        <div class="form__radios quiz__radios">
+          <div class="form__radio">
+            <label class="form__radio-label">
+              <input
+                class="form__radio-input"
+                type="radio"
+                name="q_3"
+                value="a"
+                checked
+              />
+              за общественную деятельность;
+              <span class="form__radio-check"></span>
+            </label>
+          </div>
+          <div class="form__radio">
+            <label class="form__radio-label">
+              <input
+                class="form__radio-input"
+                type="radio"
+                name="q_3"
+                value="b"
+              />
+              в области науки;
+              <span class="form__radio-check"></span>
+            </label>
+          </div>
+          <div class="form__radio">
+            <label class="form__radio-label">
+              <input
+                class="form__radio-input"
+                type="radio"
+                name="q_3"
+                value="с"
+              />
+              в области искусства.
+              <span class="form__radio-check"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quiz__footer">
+      <div class="quiz__progress">
+        <span class="quiz__progress-made">
+          Готово: <span class="quiz__progress-precent">5%</span>
+        </span>
+        <div class="quiz__progress-bar">
+          <span class="quiz__progress-track"></span>
+        </div>
+      </div>
+      <div class="quiz__nav">
+        <button class="quiz__button quiz__button--prev" type="button">
+          <svg class="quiz__button-icon">
+            <use href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <button class="button quiz__button quiz__button--next" type="button">
+          <svg class="quiz__button-icon quiz__button-icon--next">
+            <use href="img/sprite.svg#arrow-right"></use>
+          </svg>
+          Далее
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="quiz__thanks">
+    <h3 class="quiz__thanks-title">
+      Спасибо, что прошли тестированиe
+    </h3>
+    <button class="button quiz__thanks-button" type="submit">
+      Показать результаты
+    </button>
+  </div>
+</form>

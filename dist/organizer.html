@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Организатор</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="logged-in3 p-organizer">
+  <header class="header header--empty">
+    <div class="header__bar">
+      <div class="container header__bar-wrapper">
+        <nav class="menu header__menu">
+          <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list"></button>
+          <ul class="menu__list" id="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О проекте</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Организаторы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Тестирование</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user header__user">
+
+          <div class="user__logged user__logged--out">
+            <a class="user__login" href="/login.html">Вход</a>
+            |
+            <a class="user__registration" href="/registration.html">Регистрация</a>
+          </div>
+
+          <div class="user__logged user__logged--in">
+            <a class="user__profile" href="/profile.html">Личный кабинет</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="p-organizer__main">
+    <div class="container p-organizer__wrapper">
+      <div class="p-organizer__figure"></div>
+      <div class="p-organizer__icon">
+        <svg>
+          <use href="img/sprite.svg#partnership"></use>
+        </svg>
+      </div>
+      <h1 class="page-title p-organizer__title">Организатор</h1>
+      <img class="p-organizer__logo" src="img/organizer-logo.png" alt="Мой бизнес">
+      <img class="p-organizer__logo" src="img/organizer-logo-fppsk.png" alt="ФППСК">
+      <article class="p-organizer__article">
+        <h2 class="p-organizer__article-title">
+          Центр оказания услуг «Мой бизнес»
+        </h2>
+        <p>
+          На базе некоммерческой организации «Фонд поддержки предпринимательства в Ставропольском крае» действует региональный центр оказания услуг «Мой бизнес», куда могут обратиться как действующие предприниматели, так и те, кто только задумался об открытии своего дела.
+        </p>
+        <p>
+          В центре «Мой бизнес» в режиме «одного окна» можно получить квалифицированную консультацию и все необходимые услуги: от открытия ИП или ООО до продвижения продукции на рынках и модернизации производства.
+        </p>
+
+        <p>В структуру центра «Мой бизнес» входят:</p>
+        <ol>
+          <li>
+            Центр поддержки предпринимательства в Ставропольском крае;
+          </li>
+          <li>
+            Центр инжиниринга для субъектов малого и среднего предпринимательства в Ставропольском крае;
+          </li>
+          <li>
+            Центр кластерного развития для субъектов малого и среднего предпринимательства в Ставропольском крае;
+          </li>
+          <li>
+            Центр координации поддержки экспортно ориентированных субъектов малого и среднего предпринимательства в Ставропольском крае;
+          </li>
+          <li>
+            Центр инноваций социальной сферы для субъектов малого и среднего предпринимательства в Ставропольском крае.
+          </li>
+        </ol>
+      </article>
+      <aside class="p-organizer__aside">
+        <div class="p-organizer__aside-item">
+          <span class="p-organizer__aside-title">Контактные телефоны:</span>
+          <a href="tel:8652235620">(8652) 23-56-20</a>
+          <a href="tel:235624">23-56-24</a>
+        </div>
+        <div class="p-organizer__aside-item">
+          <span class="p-organizer__aside-title">Адрес центра «Мой бизнес»:</span>
+          г. Ставрополь, ул. Голенева, д. 73 а.
+        </div>
+        <div class="p-organizer__aside-item">
+          <span class="p-organizer__aside-title">Адрес электронной почты:</span>
+          <a href="mailto:info@fppsk26.ru">info@fppsk26.ru</a>
+        </div>
+        <div class="p-organizer__aside-item">
+          <span class="p-organizer__aside-title">Режим работы:</span>
+          <p>
+            Пн-Чт с 9:00 до 18:00<br>
+              Пт 09:00 - 17:00<br>
+              Перерыв 13:00-13:48
+          </p>
+        </div>
+        <a class="p-organizer__aside-link" href="https://www.fppsk26.ru/">https://www.fppsk26.ru</a>
+      </aside>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer__wrapper">
+      <div class="footer__item">
+        <p>
+          Политика конфиденциальности<br>
+          &copy; Все права защищены 2020
+        </p>
+      </div>
+      <div class="footer__item">
+        <p>Сайт носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ст. 437 ГК РФ.</p>
+      </div>
+      <div class="footer__item">
+        <p>
+          Резработка сайта:
+        </p>
+        <a class="footer__link" href="#">Вебагрегатор</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

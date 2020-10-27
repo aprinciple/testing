@@ -1,0 +1,132 @@
+.p-login {
+
+  &__header {
+    position: relative;
+    min-height: auto;
+    padding-bottom: 0;
+  }
+
+  &__header-bar {
+    z-index: auto;
+  }
+
+  &__header-bar-wrapper {
+    position: relative;
+    margin-top: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -350px;
+      left: 80px;
+      box-sizing: content-box;
+      width: 590px;
+      height: 590px;
+      border: 150px solid #ead6c1;
+      border-radius: 50%;
+
+      @media (min-width: $sm) {
+        left: 250px;
+      }
+
+      @media (min-width: $md) {
+        left: 400px;
+      }
+
+      @media (min-width: $xl) {
+        left: 487px;
+      }
+    }
+
+    &::after {
+      @media (min-width: $lg) {
+        content: '';
+        position: absolute;
+        top: -105px;
+        right: -90px;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        border: 2px dashed $brown;
+      }
+
+      @media (min-width: $xl) {
+        right: 35px;
+      }
+    }
+  }
+
+  &__to-home {
+    display: none;
+
+    @media (min-width: $lg) {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 16px;
+      color: $brown;
+      border-bottom: 2px dotted $brown;
+      text-decoration: none;
+      transition: color 0.3s, border-color 0.3s;
+
+      &:hover,
+      &:active {
+        color: $tomato;
+        border-color: $tomato;
+      }
+
+      &:hover &-icon,
+      &:active &-icon {
+        fill: $tomato;
+      }
+    }
+  }
+
+  &__to-home-icon {
+
+    @media (min-width: $lg) {
+      width: 9px;
+      height: 12px;
+      margin-right: 9px;
+      fill: $brown;
+    }
+  }
+
+  &__menu-list {
+    @media (min-width: $lg) {
+      display: none;
+    }
+  }
+
+  &__main {
+    position: relative;
+    // z-index: 10;
+    padding-top: 10px;
+    padding-bottom: 50px;
+
+    @media (min-width: $md) {
+      padding-top: 30px;
+    }
+  }
+
+  &__main-wrapper {
+    position: relative;
+
+    @media (min-width: $xl) {
+      padding-bottom: 450px;
+    }
+
+    &::after {
+      @media (min-width: $xl) {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        border: 20px solid #f2e6da;
+      }
+    }
+  }
+}

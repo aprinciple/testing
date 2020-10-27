@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тест - внутренняя страница</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body class="p-login p-thanks">
+    <header class="header header--empty">
+      <div class="header__bar">
+        <div class="container header__bar-wrapper">
+          <nav class="menu header__menu">
+            <button
+              class="menu__button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu__list"
+            ></button>
+            <ul class="menu__list p-login__menu-list" id="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="#">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">О проекте</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Организаторы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Тестирование</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <a class="p-login__to-home" href="#">
+              <svg class="p-login__to-home-icon">
+                <use href="img/sprite.svg#arrowheads-left"></use>
+              </svg>
+              На главную
+            </a>
+          </nav>
+          <div class="user header__user">
+
+            <div class="user__logged user__logged--out">
+              <a class="user__login" href="/login.html">Вход</a>
+              |
+              <a class="user__registration" href="/registration.html">Регистрация</a>
+            </div>
+
+            <div class="user__logged user__logged--in">
+              <a class="user__profile" href="/profile.html">Личный кабинет</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="p-thanks__main">
+      <div class="container p-thanks__wrapper">
+        <div class="p-thanks__figure">
+          <div class="p-thanks__figure-wrapper">
+            <svg class="p-thanks__figure-icon">
+              <use href="img/sprite.svg#checkmark"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="p-thanks__thanks">
+          <h1 class="p-thanks__title">
+            Спасибо, что прошли тестированиe
+          </h1>
+          <a class="button p-thanks__button" href="#">Показать результаты</a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer footer--empty"></footer>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

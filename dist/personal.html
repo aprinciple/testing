@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Личные данные</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="p-login p-personal logged-in3">
+  <header class="header p-login__header">
+    <div class="header__bar p-login__header-bar">
+      <div class="container header__bar-wrapper p-login__header-bar-wrapper">
+        <nav class="menu header__menu">
+          <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list"></button>
+          <ul class="menu__list p-login__menu-list" id="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О проекте</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Организаторы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Тестирование</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <a class="p-login__to-home" href="#">
+            <svg class="p-login__to-home-icon">
+              <use href="img/sprite.svg#arrowheads-left"></use>
+            </svg>
+            На главную
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="p-login__main">
+    <div class="container p-login__main-wrapper">
+      <form class="form p-personal__form" action="/" method="POST">
+        <fieldset class="form__fieldset p-personal__fieldset">
+          <legend class="form__legend p-personal__legend">
+            Для прохождения теста заполните личные данные
+          </legend>
+          <div class="p-personal__form-header">
+            <label class="form__label">
+              <span class="form__label-text">Фамилия:</span>
+              <input class="form__input" type="text" name="user_surname" required />
+            </label>
+            <label class="form__label">
+              <span class="form__label-text">Имя:</span>
+              <input class="form__input" type="text" name="user_name" required />
+            </label>
+            <label class="form__label">
+              <span class="form__label-text">Отчество:</span>
+              <input class="form__input" type="text" name="user_patronymic" required />
+            </label>
+          </div>
+
+          <div class="form__items p-personal__form-items">
+            <div class="form__item p-personal__form-item">
+              <div class="form__label">
+                <span class="form__label-text">Пол:</span>
+                <div class="form__radios p-personal__form-radios">
+                  <div class="form__radio">
+                    <label class="form__radio-label">
+                      <input class="form__radio-input" type="radio" name="user_gender" value="man" checked />
+                      Мужской
+                      <span class="form__radio-check"></span>
+                    </label>
+                  </div>
+                  <div class="form__radio">
+                    <label class="form__radio-label">
+                      <input class="form__radio-input" type="radio" name="user_gender" value="woman" />
+                      Женский
+                      <span class="form__radio-check"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <label class="form__label">
+                <span class="form__label-text">Контактный телефон:</span>
+                <input class="form__input" type="tel" name="user_phone" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _ " required />
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">Укажите место работы:</span>
+                <input class="form__input" type="password" name="user_work" required />
+              </label>
+              <p class="form__item-remark">
+                Необходимо указать название организации полностью (к примеру: ООО «Ресурс», ИП Соловьева Александра Петровна). Если вы не работаете, укажите «не работаю», «студент», «школьник».
+              </p>
+            </div>
+            <div class="form__item p-personal__form-item">
+              <label class="form__label">
+                <span class="form__label-text">Дата рождения:</span>
+                <input class="form__input" type="date" name="user_data" required />
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">Целевая группа:</span>
+                <select class="form__input" name="user_group" required>
+                  <option value="">Группа</option>
+                  <option value="user_group_1">Пункт 1</option>
+                  <option value="user_group_2">Пункт 2</option>
+                  <option value="user_group_3">Пункт 3</option>
+                </select>
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">Укажите ИНН организации:</span>
+                <input class="form__input" type="text" name="user_inn" required />
+              </label>
+              <p class="form__item-remark">
+                Необходимо указать ИНН организации, в которой вы работаете или являетесь собственником. Если вы не работаете, укажите прочее
+              </p>
+            </div>
+          </div>
+
+          <p class="form__remark">Поля, обазательные для заполнения</p>
+          <button class="button form__button" type="submit">Сохранить</button>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

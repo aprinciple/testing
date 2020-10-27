@@ -1,0 +1,176 @@
+.logged-in3 {
+}
+.p-tests {
+
+		&__main {
+      position: relative;
+
+      @media (min-width: $md) {
+        padding-top: 30px;
+      }
+
+      @media (min-width: $lg) {
+        padding-top: 50px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -130px;
+        left: -25px;
+        z-index: -1;
+        width: 935px;
+        height: 935px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 115px solid #ede2d6;
+
+        @media (min-width: $sm) {
+          left: auto;
+          top: -500px;
+          right: -500px;
+        }
+
+        @media (min-width: $lg) {
+          top: -500px;
+          right: -330px;
+        }
+
+        @media (min-width: $xl) {
+          right: -130px;
+        }
+      }
+
+      &::after {
+
+        @media (min-width: $lg) {
+          content: '';
+          position: absolute;
+          top: 300px;
+          left: -460px;
+          z-index: -1;
+          width: 480px;
+          height: 480px;
+          border-radius: 50%;
+          border: 50px solid $brown;
+        }
+
+        @media (min-width: $xl) {
+          left: -430px;
+        }
+      }
+    }
+
+    &__rocket {
+      display: none;
+
+      @media (min-width: $xl) {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 200px;
+        width: 110px;
+        height: 200px;
+      }
+    }
+    
+    &__figure {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      display: grid;
+      place-items: center;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px dashed $tomato;
+
+      @media (min-width: $sm) {
+        right: 250px;
+      }
+
+      @media (min-width: $lg) {
+        top: 0;
+        right: 350px;
+        width: 175px;
+        height: 175px;
+      }
+
+      @media (min-width: $xl) {
+        right: 550px;
+      }
+    }
+
+    &__figure-wrapper {
+      display: grid;
+      place-items: center;
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background-color: $tomato;
+
+      @media (min-width: $lg) {
+        width: 115px;
+        height: 115px;
+      }
+    }
+
+    &__figure-icon {
+      width: 40px;
+      height: 40px;
+      fill: #fff;
+
+      @media (min-width: $lg) {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+		&__title {
+      margin-bottom: 110px;
+		}
+
+		&__article {
+      margin-bottom: 35px;
+
+      @media (min-width: $lg) {
+        margin-bottom: 50px;
+      }
+		}
+
+		&__article-title {
+      margin-bottom: 15px;
+      font-family: Circe;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 30px;
+      color: $dark-brown;
+
+      @media (min-width: $lg) {
+        margin-bottom: 25px;
+        font-size: 35px;
+        line-height: 40px;
+      }
+		}
+
+		&__article-text {
+      font-size: 16px;
+      line-height: 20px;
+      color: #000;
+
+      @media (min-width: $lg) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+		}
+
+		&__article-button {
+      margin-top: 20px;
+      padding-left: 70px;
+      padding-right: 70px;
+
+      @media (min-width: $lg) {
+        margin-top: 30px;
+      }
+    }
+}

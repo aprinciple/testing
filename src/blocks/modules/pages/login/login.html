@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вход</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body class="p-login logged-in3">
+    <header class="header p-login__header">
+      <div class="header__bar p-login__header-bar">
+        <div class="container header__bar-wrapper p-login__header-bar-wrapper">
+          <nav class="menu header__menu">
+            <button
+              class="menu__button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu__list"
+            ></button>
+            <ul class="menu__list p-login__menu-list" id="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="#">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">О проекте</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Организаторы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Тестирование</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <a class="p-login__to-home" href="#">
+              <svg class="p-login__to-home-icon">
+                <use href="img/sprite.svg#arrowheads-left"></use>
+              </svg>
+              На главную
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="p-login__main">
+      <div class="container p-login__main-wrapper">
+        <form class="form" action="/" method="POST">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Вход</legend>
+            <label class="form__label">
+              <span class="form__label-text">Логин:</span>
+              <input class="form__input" type="text" name="user_name">
+            </label>
+            <label class="form__label">
+              <span class="form__label-text">Электронная почта:</span>
+              <input class="form__input" type="email" name="user_email">
+            </label>
+            <label class="form__label">
+              <span class="form__label-text">Пароль:</span>
+              <input class="form__input" type="password" name="user_password">
+            </label>
+            <p class="form__remark">Поля, обазательные для заполнения</p>
+            <button class="button form__button" type="submit">Войти</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

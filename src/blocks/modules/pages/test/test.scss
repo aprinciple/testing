@@ -1,0 +1,228 @@
+.p-test {
+
+  &__main {
+    padding-bottom: 50px;
+
+    @media (min-width: $sm) {
+      padding-top: 40px;
+      padding-bottom: 75px;
+    }
+    @media (min-width: $lg) {
+      padding-top: 60px;
+      padding-bottom: 100px;
+    }
+    @media (min-width: $xl) {
+      padding-top: 150px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    &::before {
+
+      @media (min-width: $xl) {
+        content: '';
+        position: absolute;
+        top: -70px;
+        left: -700px;
+        z-index: -1;
+        width: 875px;
+        height: 875px;
+        border-radius: 50%;
+        border: 115px solid #ede2d6;
+      }
+    }
+
+  }
+
+  &__article {
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @media (min-width: $sm) {
+      width: 40%;
+    }
+
+    @media (min-width: $xl) {
+      width: 490px;
+    }
+
+    &::before {
+      @media (min-width: $xl) {
+        content: '';
+        position: absolute;
+        top: -30px;
+        left: 15px;
+        width: 55px;
+        height: 4px;
+        background-color: $dark-tomato;
+      }
+    }
+  }
+
+  &__picture {
+    position: relative;
+    right: -30px;
+    width: 300px;
+    height: 300px;
+
+    @media (min-width: $sm) {
+      position: absolute;
+      top: -120px;
+      right: -75px;
+      z-index: -1;
+      width: 350px;
+      height: 350px;
+    }
+
+    @media (min-width: $md) {
+      right: -90px;
+      width: 400px;
+      height: 400px;
+    }
+
+    @media (min-width: $xl) {
+      top: -275px;
+      right: -105px;
+      width: 705px;
+      height: 705px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 35px;
+      left: -40px;
+      width: 85px;
+      height: 160px;
+      background-image: url('../img/logo-rocket.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+
+      @media (min-width: $xl) {
+        top: 70px;
+        left: -75px;
+        width: 150px;
+        height: 275px;
+      }
+    }
+
+    &::after {
+      @media (min-width: $xl) {
+        content: '';
+        position: absolute;
+        top: -30px;
+        right: -30px;
+        z-index: -1;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 25px solid $brown;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__figure {
+    position: absolute;
+    left: 0;
+    bottom: -95px;
+    display: grid;
+    place-items: center;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 2px dashed $tomato;
+
+    @media (min-width: $sm) {
+      bottom: 0;
+    }
+
+    @media (min-width: $xl) {
+      width: 290px;
+      height: 290px;
+    }
+  }
+
+  &__figure-wrapper {
+    display: grid;
+    place-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: $tomato;
+
+    @media (min-width: $xl) {
+      width: 210px;
+      height: 210px;
+    }
+  }
+
+  &__figure-icon {
+    width: 40px;
+    height: 50px;
+    fill: #fff;
+
+    @media (min-width: $xl) {
+      width: 70px;
+      height: 90px;
+    }
+  }
+
+  &__text {
+    padding-top: 110px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid $tomato;
+
+    @media (min-width: $sm) {
+      padding-top: 140px;
+    }
+
+    @media (min-width: $md) {
+      padding-top: 170px;
+    }
+
+    @media (min-width: $xl) {
+      padding-top: 175px;
+    }
+
+    & p:not(:last-child) {
+      margin-bottom: 15px;
+
+      @media (min-width: $sm) {
+        margin-bottom: 30px;
+      }
+
+      @media (min-width: $xl) {
+        margin-bottom: 45px;
+      }
+    }
+
+    & p:first-child {
+
+      @media (min-width: $xl) {
+        padding-right: 50%;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+
+    @media (min-width: $sm) {
+      width: 290px;
+      margin-left: 0;
+      transform: none;
+    }
+  }
+}

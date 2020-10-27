@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="logged-in p-profile">
+  <header class="header header--empty">
+    <div class="header__bar p-profile__header-bar">
+      <div class="container header__bar-wrapper p-profile__header-bar-wrapper">
+        <span class="p-profile__username p-profile__header-bar-username"
+            >Name of user</span>
+        <nav class="menu header__menu">
+          <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list"></button>
+          <ul class="menu__list" id="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О проекте</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Организаторы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Тестирование</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="p-profile__user">
+          <span class="p-profile__username p-profile__user-name"
+              >Name of user</span>
+          <a class="p-profile__logout" href="/">
+            <span class="p-profile__logout-text">Выход</span>
+            <svg class="p-profile__logout-icon">
+              <use href="img/sprite.svg#log-out"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="p-profile__main">
+    <div class="container p-profile__main-wrapper">
+      <div class="p-profile__items">
+        <div class="p-profile__tabs">
+          <div class="p-profile__tab">Тесты</div>
+          <div class="p-profile__tab">Контактные данные</div>
+        </div>
+        <div class="p-profile__item p-profile__tests">
+          <h6 class="p-profile__item-title">Тесты</h6>
+          <div class="p-profile__tests-item">
+            <span class="p-profile__tests-title">
+                Название теста. Lorem ipsum dolor.
+              </span>
+            <a class="p-profile__tests-status p-profile__tests-status--passed" href="#">
+              Пройден
+            </a>
+            <a class="p-profile__tests-download" href="/" download>
+              <svg class="p-profile__tests-download-icon">
+                <use href="img/sprite.svg#pdf"></use>
+              </svg>
+              Скачать pdf
+            </a>
+            <a class="p-profile__tests-mail" href="mailto:">
+              <svg class="p-profile__tests-mail-icon">
+                <use href="img/sprite.svg#mail"></use>
+              </svg>
+              Отправить на e-mail
+            </a>
+          </div>
+          <div class="p-profile__tests-item">
+            <span class="p-profile__tests-title">
+                Название теста. Lorem ipsum dolor.
+              </span>
+            <a class="p-profile__tests-status p-profile__tests-status" href="#">
+              Пройти
+            </a>
+            <a class="p-profile__tests-download" href="/" download>
+              <svg class="p-profile__tests-download-icon">
+                <use href="img/sprite.svg#pdf"></use>
+              </svg>
+              Скачать pdf
+            </a>
+            <a class="p-profile__tests-mail" href="mailto:">
+              <svg class="p-profile__tests-mail-icon">
+                <use href="img/sprite.svg#mail"></use>
+              </svg>
+              Отправить на e-mail
+            </a>
+          </div>
+          <div class="p-profile__tests-item">
+            <span class="p-profile__tests-title">
+                Название теста. Lorem ipsum dolor.
+              </span>
+            <a class="p-profile__tests-status p-profile__tests-status--passed" href="#">
+              Пройден
+            </a>
+            <a class="p-profile__tests-download" href="/" download>
+              <svg class="p-profile__tests-download-icon">
+                <use href="img/sprite.svg#pdf"></use>
+              </svg>
+              Скачать pdf
+            </a>
+            <a class="p-profile__tests-mail" href="mailto:">
+              <svg class="p-profile__tests-mail-icon">
+                <use href="img/sprite.svg#mail"></use>
+              </svg>
+              Отправить на e-mail
+            </a>
+          </div>
+          <div class="p-profile__tests-item">
+            <span class="p-profile__tests-title">
+                Название теста. Lorem ipsum dolor.
+              </span>
+            <a class="p-profile__tests-status p-profile__tests-status--passed" href="#">
+              Пройден
+            </a>
+            <a class="p-profile__tests-download" href="/" download>
+              <svg class="p-profile__tests-download-icon">
+                <use href="img/sprite.svg#pdf"></use>
+              </svg>
+              Скачать pdf
+            </a>
+            <a class="p-profile__tests-mail" href="mailto:">
+              <svg class="p-profile__tests-mail-icon">
+                <use href="img/sprite.svg#mail"></use>
+              </svg>
+              Отправить на e-mail
+            </a>
+          </div>
+          <div class="p-profile__tests-item">
+            <span class="p-profile__tests-title">
+                Название теста. Lorem ipsum dolor.
+              </span>
+            <a class="p-profile__tests-status p-profile__tests-status" href="#">
+              Пройти
+            </a>
+            <a class="p-profile__tests-download" href="/" download>
+              <svg class="p-profile__tests-download-icon">
+                <use href="img/sprite.svg#pdf"></use>
+              </svg>
+              Скачать pdf
+            </a>
+            <a class="p-profile__tests-mail" href="mailto:">
+              <svg class="p-profile__tests-mail-icon">
+                <use href="img/sprite.svg#mail"></use>
+              </svg>
+              Отправить на e-mail
+            </a>
+          </div>
+        </div>
+        <div class="p-profile__item p-profile__contacts">
+          <h6 class="p-profile__item-title">Контактные данные</h6>
+          <div class="p-profile__contacts-wrapper">
+            <span class="p-profile__contacts-title">
+                Соловьева Александра Олеговна
+              </span>
+            <div class="p-profile__contacts-item">
+              <span class="p-profile__contacts-field">Телефон:</span>
+              <span class="p-profile__contacts-value"
+                  >+7 (123) 456-78-90</span>
+            </div>
+            <div class="p-profile__contacts-item">
+              <span class="p-profile__contacts-field">E-mail:</span>
+              <span class="p-profile__contacts-value">mail@mail.ru</span>
+            </div>
+            <div class="p-profile__contacts-item">
+              <span class="p-profile__contacts-field">Дата рождения:</span>
+              <span class="p-profile__contacts-value">01.01.2020</span>
+            </div>
+            <div class="p-profile__contacts-item">
+              <span class="p-profile__contacts-field">Пол:</span>
+              <span class="p-profile__contacts-value">Женский</span>
+            </div>
+            <div class="p-profile__contacts-item">
+              <span class="p-profile__contacts-field">Целевая группа:</span>
+              <span class="p-profile__contacts-value">группа</span>
+            </div>
+            <div class="p-profile__contacts-item">
+              <span class="p-profile__contacts-field">Место работы:</span>
+              <span class="p-profile__contacts-value">диван</span>
+            </div>
+            <div class="p-profile__contacts-item">
+              <span class="p-profile__contacts-field">ИНН организации:</span>
+              <span class="p-profile__contacts-value">123456789123456</span>
+            </div>
+            <button type="button" class="p-profile__contacts-button">
+              <svg class="p-profile__contacts-button-icon">
+                <use href="img/sprite.svg#edit"></use>
+              </svg>
+              Редактировать
+            </button>
+          </div>
+
+          <form class="form p-personal__form p-profile__form" action="/" method="POST">
+            <fieldset class="form__fieldset p-personal__fieldset">
+              <label class="form__label">
+                <span class="form__label-text">Фамилия:</span>
+                <input class="form__input" type="text" name="user_surname" required />
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">Имя:</span>
+                <input class="form__input" type="text" name="user_name" required />
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">Отчество:</span>
+                <input class="form__input" type="text" name="user_patronymic" required />
+              </label>
+
+              <div class="form__label">
+                <span class="form__label-text">Пол:</span>
+                <div class="form__radios p-personal__form-radios">
+                  <div class="form__radio">
+                    <label class="form__radio-label">
+                      <input class="form__radio-input" type="radio" name="user_gender" value="man" checked />
+                      Мужской
+                      <span class="form__radio-check"></span>
+                    </label>
+                  </div>
+                  <div class="form__radio">
+                    <label class="form__radio-label">
+                      <input class="form__radio-input" type="radio" name="user_gender" value="woman" />
+                      Женский
+                      <span class="form__radio-check"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <label class="form__label">
+                <span class="form__label-text">Дата рождения:</span>
+                <input class="form__input" type="date" name="user_data" required />
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">Контактный телефон:</span>
+                <input class="form__input" type="tel" name="user_phone" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _ " required />
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">Целевая группа:</span>
+                <select class="form__input" name="user_group" required>
+                  <option value="">Группа</option>
+                  <option value="group_1">Пункт 1</option>
+                  <option value="group_2">Пункт 2</option>
+                  <option value="group_3">Пункт 3</option>
+                </select>
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">Место работы:</span>
+                <input class="form__input" type="password" name="user_work" required />
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">Укажите ИНН организации:</span>
+                <input class="form__input" type="text" name="user_inn" required />
+              </label>
+
+              <button class="button form__button p-profile__form-button" type="submit">
+                Сохранить
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer__wrapper">
+      <div class="footer__item">
+        <p>
+          Политика конфиденциальности<br />
+            &copy; Все права защищены 2020
+        </p>
+      </div>
+      <div class="footer__item">
+        <p>
+          Сайт носит информационный характер и ни при каких условиях не
+          является публичной офертой, определяемой положениями ст. 437 ГК РФ.
+        </p>
+      </div>
+      <div class="footer__item">
+        <p>Резработка сайта:</p>
+        <a class="footer__link" href="#">Вебагрегатор</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
